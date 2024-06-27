@@ -1,0 +1,17 @@
+<%- include('../partials/_head-style.ejs') %>
+        <title>New Food</title>
+    </head>
+
+    <%- include('../partials/_cupboard-open-close.ejs') %>
+
+        <%- include('../partials/_navbar.ejs') %>
+        <h1>新食品</h1>
+        <div>
+            <form action="/users/<%= user._id %>/foods" method="POST">
+            <label for="name">Name: </label>
+            <input type="text" name="name" id="name" />
+        </form>
+        </div>
+    </body>
+
+</html>

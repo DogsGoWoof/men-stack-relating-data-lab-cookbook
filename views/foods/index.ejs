@@ -1,0 +1,23 @@
+<%- include('../partials/_head-style.ejs') %>
+        <title>My Pantry</title>
+    </head>
+
+    <%- include('../partials/_cupboard-open-close.ejs') %>
+
+        <%- include('../partials/_navbar.ejs') %>
+        <h1>食料品</h1>
+        <div class="button">
+            <a href="/users/<%= user._id %>/foods/new">+品</a>
+        </div>
+        <ul>
+        <% foods.forEach((food) => { %>
+            <a href="/users/<%= user._id %>/foods/<%= food._id %>">
+            <li>
+                <%= food.name %>
+            </li>
+        <% }); %>
+        </ul>
+
+    </body>
+
+</html>

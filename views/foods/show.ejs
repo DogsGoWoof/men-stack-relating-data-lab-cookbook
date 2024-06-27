@@ -1,0 +1,35 @@
+<%- include('../partials/_head-style.ejs') %>
+        <title>New Food</title>
+    </head>
+
+    <%- include('../partials/_cupboard-open-close.ejs') %>
+
+    <%- include('../partials/_navbar.ejs') %>
+        <div class="show-body">
+            <div class="show-header">
+                <h1><%= food.name %></h1>
+                <div class="show-sidebar">
+                    <div class="show-actions">
+                        <a href="/users/<%= user._id %>/foods/<%= food._id %>/edit">Edit Food</a>
+                        <form action="/users/<%= user._id %>/foods/<%= food._id %>?_method=DELETE" method="POST">
+                            <button type="submit">Delete Food</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="show-notes-container">
+                <% if (food.postingLink) { %>
+                    <a href="<%= food.postingLink %>" target="_blank">View job posting</a>
+                <% } %>
+                <% if (food.notes) { %>
+                    <div class="show-notes">
+                        <h2>Notes:</h2>
+                        <p><%= food.notes %></p>
+                    </div>
+                <% } %>
+            </div>
+        </div>
+
+    </body>
+    
+</html>

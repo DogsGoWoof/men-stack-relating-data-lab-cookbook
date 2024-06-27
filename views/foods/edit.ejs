@@ -1,0 +1,24 @@
+<%- include('../partials/_head-style.ejs') %>
+        <title>Meet Your Labelmaker [<%= food.name %>]</title>
+    </head>
+
+    <%- include('../partials/_cupboard-open-close.ejs') %>
+
+        <%- include('../partials/_navbar.ejs') %>
+        <h1><%= food.name %></h1>
+        <div>
+            <form action="/users/<%= user._id %>/foods/<%= food._id %>?_method=PUT" method="POST">
+                <label for"name">Name: </label>
+                <input type="text" name="name" id="name" />
+                <!-- <label for="title">Title:</label>
+                <input type="text" name="title" id="title" value="<%= food.title %>">
+                <label for="notes">Notes:</label>
+                <textarea name="notes" id="notes"><%= food.notes %></textarea>
+                <label for="postingLink">Posting Link:</label>
+                <input type="text" name="postingLink" id="postingLink" value="<%= food.postingLink %>"> -->
+                <button type="submit">Label Food</button>
+            </form>
+        </div>
+
+    </body>
+</html>

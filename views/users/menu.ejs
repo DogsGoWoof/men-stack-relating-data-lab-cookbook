@@ -1,0 +1,17 @@
+<%- include('../partials/_head-style.ejs') %>
+        <title>My Pantry</title>
+    </head>
+
+    <%- include('../partials/_cupboard-open-close.ejs') %>
+        <%- include('../partials/_navbar.ejs') %>
+        <h1><%= user.username %></h1>
+        <ul>
+        <% user.pantry.forEach((food) => { %>
+            <li>
+                <%= food.name %>
+            </li>
+        <% }); %>
+
+    </body>
+
+</html>

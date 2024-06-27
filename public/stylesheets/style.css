@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    /* background: linear-gradient(90deg, rgb(150, 115, 46), rgb(149, 137, 74) 50%, rgb(137, 76, 2)); */
+    background: no-repeat url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj8pPZIk5BDMSCECchZbylTXyaRkhLD9O1aG4myEuE4kbhBWlFpO2Z3Rw3LZCL2MZLcHR2OgSRGjklK-nAlNssOHOYRM1_fXgxL6-5AignS3uV4szWgycyz478MllGzhRsoTFBx__a3b1nP/s1078/syouhin_tana_reitou.png');
+    background-size: contain;
+    background-position: center;
+    height: 100dvh;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    font-family: "Noto Sans JP", sans-serif;
+    border: 10px solid black;
+}
+
+.open-cupboard {
+    background: no-repeat url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi1tbp1mYkBbOZQAAfgnpk9bfJREkSrrB82lYVju_wOM0f0QgRzXkSy7adzF-lebD-BYFApyiHJ97NC3gd4_54y9o1Gz21ny8Ox5OTNoJ4JVNDj-zd-LerDhS_yUWTPEqkHJHg449ZbmZGx/s400/syouhin_tana_reitou_open.png');
+    background-size: contain;
+    background-position: center;
+    height: 100dvh;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    font-family: "Noto Sans JP", sans-serif;
+}
+
+h1 {
+    background: white;
+    border-radius: 100dvh;
+    padding: 0 8dvw;
+    font-size: 5dvh;
+}
+
+ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    list-style-type: none;
+    width: 60dvw;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    margin-top: 5dvh;
+    background: #c1a139;
+    border-radius: 2dvh;
+    padding: 0 1dvw;
+}
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: 900;
+}
+
+form {
+    
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.emoji-icon {
+    font-size: 3.5dvh;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10dvw;
+    aspect-ratio: 1;
+    background: yellowgreen;
+    padding: .5dvh;
+    margin: 1dvh;
+    border-radius: 50%;
+    font-size: 3dvh;
+}
+
+.content-container {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(#777777aa, #bbbbbb22);
+    width: 50dvw;
+    padding: 4dvh;
+    border-radius: 5dvh;
+    margin: 5dvh 0;
+}
+
+.link-div {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    width: 10dvw;
+    background: sandybrown;
+    border-radius: 5dvh;
+}
+
+#welcome {
+    font-size: 5dvh;
+    font-style: italic;
+}

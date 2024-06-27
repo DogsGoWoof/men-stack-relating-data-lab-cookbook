@@ -1,0 +1,20 @@
+<%- include('../partials/_head-style.ejs') %>
+        <title>All Users</title>
+    </head>
+
+    <%- include('../partials/_cupboard-open-close.ejs') %>
+
+        <%- include('../partials/_navbar.ejs') %>
+        <h1>料理人</h1>
+        <ul>
+        <% users.forEach((user) => { %>
+            <a href="/users/<%= user._id %>/menu">
+            <li>
+                <%= user.username %>
+            </li>
+        <% }); %>
+        </ul>
+
+    </body>
+
+</html>
