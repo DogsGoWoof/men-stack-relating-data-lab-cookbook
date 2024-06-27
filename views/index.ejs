@@ -8,14 +8,15 @@
       <h1>Welcome to the app, <%= user.username %>!</h1>
       <div class="content-container">
         <p>
-          <a href="/auth/sign-out">Sign out</a>
+          <a href="/auth/sign-out"><div class="link-div">Sign out</div></a>
         </p>
     <% } else { %>
-      <h1 id="welcome">ようこそ お客様、 食Pantryへ.</h1>
-        <h3><em>口以上旨</em></h3>
+      <h1 id="welcome"><ruby> ようこそ, お客様、 食Pantryへ. <rp>(</rp><rt> Welcome, guest, ShokuPantry to. </rt><rp>)</rp></ruby></h1>
+        <h3><em><ruby> 口以上旨 <rp>(</rp><rt> mouth like more tasty </rt><rp>)</rp></ruby></em></h3>
         <div class="content-container">
         <p>
-          <a href="/auth/sign-up"><div class="link-div">Sign Up</div></a> or
+          <a href="/auth/sign-up"><div class="link-div">Sign Up</div></a>
+          <br>
           <a href="/auth/sign-in"><div class="link-div">Sign In</div></a>
         </p>
     <% } %>

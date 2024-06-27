@@ -5,12 +5,13 @@
     <%- include('../partials/_cupboard-open-close.ejs') %>
 
         <%- include('../partials/_navbar.ejs') %>
-        <h1>新食品</h1>
-        <div>
+        <h1><ruby> 食料品 <rp>(</rp><rt>Foodstuff</rt><rp>)</rp></ruby></h1>
+        <div class="content-container">
             <form action="/users/<%= user._id %>/foods" method="POST">
-            <label for="name">Name: </label>
-            <input type="text" name="name" id="name" />
-        </form>
+                <label for="name">Name: </label>
+                <input type="text" name="name" id="name" required />
+                <button type="submit"><div class="link-div">Add</div></button>
+            </form>
         </div>
     </body>
 

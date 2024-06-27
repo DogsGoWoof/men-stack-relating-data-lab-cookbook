@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
 
+:root {
+    --yasai-green: #00ff00; 
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -32,18 +36,23 @@ body {
 }
 
 h1 {
-    background: white;
-    border-radius: 100dvh;
-    padding: 0 8dvw;
+    background: #ffffffa1;
+    border-radius: 1dvh;
+    padding: 1dvh 8dvw;
     font-size: 5dvh;
+    border: .1dvh solid black;
+    margin-bottom: 3dvh;
 }
 
 ul {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
     list-style-type: none;
     width: 60dvw;
+    background: #444444aa;
+    border-radius: 1dvh;
+    padding-right: 4dvw;
 }
 
 nav {
@@ -53,10 +62,18 @@ nav {
     position: fixed;
     top: 0;
     margin-top: 5dvh;
-    background: #c1a139;
+    background: #ffffff;
     border-radius: 2dvh;
-    padding: 0 1dvw;
+    padding: 1dvh 1dvw;
+    padding-top: 0;
+    outline: 1dvh ridge var(--yasai-green);
 }
+.nav-line {
+    margin: 0 .5dvw;
+    font-size: 3dvh;
+    translate: .4dvw -.4dvh;
+}
+
 a {
     text-decoration: none;
     color: black;
@@ -64,28 +81,51 @@ a {
 }
 
 form {
-    
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
+    font-weight: 900;
 }
 
 .emoji-icon {
     font-size: 3.5dvh;
+    filter: drop-shadow(0 0 .01dvh black);
+}
+
+button {
+    scale: 1.1;
+    margin-top: 1dvh;
+    padding: 0;
+    background: transparent;
+    border: none;
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: 900;
+}
+
+button:hover {
+    cursor: pointer;
 }
 
 .button {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 10dvw;
-    aspect-ratio: 1;
-    background: yellowgreen;
+    width: 15dvw;
+    aspect-ratio: 2;
+    background: radial-gradient(#ffffff, var(--yasai-green));
     padding: .5dvh;
     margin: 1dvh;
-    border-radius: 50%;
+    border-radius: 1dvh;
     font-size: 3dvh;
+    border: .5dvh ridge brown;
+    border-top: .1dvh ridge brown;;
+    border-bottom: .1dvh ridge brown;
+    transition: all linear 1s;
+}
+
+.button:hover {
+    background: radial-gradient(#ffffff, #018f01);
 }
 
 .content-container {
@@ -93,11 +133,12 @@ form {
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(#777777aa, #bbbbbb22);
+    background: linear-gradient(#bbbbbb77, #777777aa);
     width: 50dvw;
     padding: 4dvh;
     border-radius: 5dvh;
     margin: 5dvh 0;
+    border:1px ;
 }
 
 .link-div {
@@ -105,12 +146,54 @@ form {
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
-    width: 10dvw;
-    background: sandybrown;
+    width: 15dvw;
+    background: var(--yasai-green);
     border-radius: 5dvh;
+    padding: 1dvh;
+}
+
+.red {
+    background: red;
+}
+
+.yellow {
+    background: yellow;
+}
+
+.link-div:hover {    
+    filter: drop-shadow(0 0 1dvh white);
 }
 
 #welcome {
     font-size: 5dvh;
     font-style: italic;
+}
+
+.food-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15dvw;
+    aspect-ratio: 1;
+    background: no-repeat center url('https://em-content.zobj.net/source/google/387/fork-and-knife-with-plate_1f37d-fe0f.png');
+    background-size: cover;
+}
+
+rt {
+    font-size: 1.8dvh;
+    font-weight: light;
+}
+
+label {
+    filter: drop-shadow(0 0 1dvh white);
+}
+
+input {
+    border-radius: 1dvh;
+    padding: 1dvh;
+    font-weight: 700;
+}
+
+.text {
+    font-weight: 700;
 }

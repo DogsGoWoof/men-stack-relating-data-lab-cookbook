@@ -6,17 +6,11 @@
 
         <%- include('../partials/_navbar.ejs') %>
         <h1><%= food.name %></h1>
-        <div>
+        <div class="content-container">
             <form action="/users/<%= user._id %>/foods/<%= food._id %>?_method=PUT" method="POST">
                 <label for"name">Name: </label>
                 <input type="text" name="name" id="name" />
-                <!-- <label for="title">Title:</label>
-                <input type="text" name="title" id="title" value="<%= food.title %>">
-                <label for="notes">Notes:</label>
-                <textarea name="notes" id="notes"><%= food.notes %></textarea>
-                <label for="postingLink">Posting Link:</label>
-                <input type="text" name="postingLink" id="postingLink" value="<%= food.postingLink %>"> -->
-                <button type="submit">Label Food</button>
+                <button type="submit"><div class=link-div>Label Food</div></button>
             </form>
         </div>
 

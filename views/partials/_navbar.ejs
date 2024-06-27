@@ -1,11 +1,11 @@
 <nav>
-    <a href="/">Home</a> |
+    <a href="/"><span class="emoji-icon">🏠</span>Home</a><span class="nav-line">|</span>
     <% if(user) { %>
-        <a href="/users/<%=user._id%>/foods"><span class="emoji-icon">&#x1F96B</span> View my Pantry</a> |
-        <a href="/auth/sign-out">Sign Out</a> |
+        <a href="/users/<%=user._id%>/foods"><span class="emoji-icon">&#x1F96B</span> View my Pantry</a><span class="nav-line">|</span>
+        <a href="/auth/sign-out"><span class="emoji-icon">&#x1F961</span>Sign Out</a><span class="nav-line">|</span> 
     <% } else { %>
-        <a href="/auth/sign-in"><span class="emoji-icon">&#x1F6CE</span> Sign In</a> |
-        <a href="/auth/sign-up">Sign Up</a> |
+        <a href="/auth/sign-in"><span class="emoji-icon">&#x1F6CE</span> Sign In</a><span class="nav-line">|</span>
+        <a href="/auth/sign-up"><span class="emoji-icon">✒️</span> Sign Up</a><span class="nav-line">|</span>
     <% } %>
-    <a href="/users/"><span class="emoji-icon">&#x1F961</span> Explore Our Community</a>
+    <a href="/users/"><span class="emoji-icon">👨‍🍳</span> Explore Our Community</a>
 </nav>
