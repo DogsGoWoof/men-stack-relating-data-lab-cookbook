@@ -5,13 +5,15 @@
     <%- include('../partials/_cupboard-open-close.ejs') %>
 
         <%- include('../partials/_navbar.ejs') %>
-        <h1>料理人</h1>
-        <ul>
+        <h1><ruby> 料理人 <rp>(</rp><rt>Cook Person</rt><rp>)</rp></ruby></h1>
+        <ul class="user-list">
         <% users.forEach((user) => { %>
             <a href="/users/<%= user._id %>/menu">
-            <li>
-                <%= user.username %>
-            </li>
+                <div class="user">
+                    <li>
+                        <p id="usernames"><%= user.username %></p>
+                    </li>
+                </div>
         <% }); %>
         </ul>
 

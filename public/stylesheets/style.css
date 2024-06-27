@@ -197,3 +197,35 @@ input {
 .text {
     font-weight: 700;
 }
+
+#usernames {
+    /* scale: .8;
+    rotate: 45deg; */
+    background: #ffffff44;
+    /* background: red; */
+    padding: 1dvh;
+    padding-top: 0;
+    border-radius: 0 5dvh 100dvh 100dvh;
+    border: .5dvh solid white;
+    border-right: .1dvh solid white;
+    border-left: .1dvh solid white;
+    border-top: none;
+    translate: 0 1dvh;
+}
+
+#usernames:hover {
+    background: linear-gradient(#ffffff44 60%, white 60%);
+    filter: drop-shadow(0 0 1dvh white);
+}
+
+.user-list {
+    padding: 1dvh;
+}
+
+.nav-text {
+    display: inline-block;
+}
+
+.nav-text:hover {
+    transform: translateY(-.5dvh);
+}
